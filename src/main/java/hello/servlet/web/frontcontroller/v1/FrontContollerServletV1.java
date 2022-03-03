@@ -1,6 +1,5 @@
 package hello.servlet.web.frontcontroller.v1;
 
-import hello.servlet.web.frontcontroller.ControllerV1;
 import hello.servlet.web.frontcontroller.v1.controller.MemberFormControllerV1;
 import hello.servlet.web.frontcontroller.v1.controller.MemberListControllerV1;
 import hello.servlet.web.frontcontroller.v1.controller.MemberSaveControllerV1;
@@ -26,7 +25,7 @@ public class FrontContollerServletV1 extends HttpServlet {
 
     @Override
     protected void service(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("FrontContollerServletV1.service");
+        System.out.println("FrontControllerServletV1.service");
         String requestURI = request.getRequestURI();
 
         ControllerV1 controller = controllerMap.get(requestURI);
